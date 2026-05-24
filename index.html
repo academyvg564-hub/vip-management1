@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <title>VIP Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>VIP Management System</h1>
+        <div class="card">
+            <h3>👤 සේවක අංශය</h3>
+            <button onclick="markAttendance('start')" class="btn-green">පැමිණීම (Start)</button>
+            <button onclick="markAttendance('end')" class="btn-red">පිටවීම (End)</button>
+        </div>
+        <div class="card">
+            <h3>🔐 කළමනාකරුගේ අංශය</h3>
+            <button onclick="openAdminPanel()" class="btn-blue">කළමනාකරු පැනලය</button>
+        </div>
+        <div id="adminPanel" class="card" style="display:none;">
+            <h3>⚙️ පාලන මණ්ඩලය</h3>
+            <button onclick="adminAction('register')" class="btn-green">පුද්ගල ලියාපදිංචිය</button>
+            <button onclick="adminAction('salary')" class="btn-blue">වැටුප් ගණනය</button>
+            <button onclick="adminAction('attendance')" class="btn-orange">වාර්තා බැලීම</button>
+            <button onclick="adminAction('resetAll')" class="btn-red">Reset සියල්ල</button>
+        </div>
+        <div id="displayArea" class="card" style="display:none;">
+            <h3 id="displayTitle">තොරතුරු</h3>
+            <ul id="displayList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

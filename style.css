@@ -1,0 +1,10 @@
+﻿body { background: #f4f7f6; font-family: 'Segoe UI', sans-serif; display: flex; justify-content: center; padding: 20px; }
+.dashboard-card { width: 450px; background: white; padding: 30px; border-radius: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+.header { text-align: center; color: #2c3e50; margin-bottom: 20px; }
+.card { background: #f9f9f9; padding: 15px; border-radius: 15px; margin-top: 15px; }
+button { width: 100%; padding: 12px; margin: 5px 0; border: none; border-radius: 10px; cursor: pointer; color: white; font-weight: bold; }
+.btn-green { background: #27ae60; } .btn-blue { background: #3498db; }
+.btn-purple { background: #8e44ad; } .btn-orange { background: #e67e22; }
+.btn-red { background: #c0392b; }
+#displayList { padding: 0; list-style: none; }
+#displayList li { padding: 8px; border-bottom: 1px solid #ddd; font-size: 13px; }
